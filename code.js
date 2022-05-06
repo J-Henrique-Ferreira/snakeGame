@@ -4,7 +4,7 @@ window.onload = function() {
     document.addEventListener("keydown", keyPush);
     document.addEventListener("click", clickButton);
 
-    setInterval(game, 130);
+    setInterval(game, 180);
     setInterval(pontuacao, 600)
     level();
 
