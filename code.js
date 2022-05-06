@@ -1,7 +1,8 @@
 window.onload = function() {
     var stage = document.getElementById("stage");
     var ctx = stage.getContext("2d");
-    document.addEventListener("keydown", keyPush)
+    document.addEventListener("keydown", keyPush);
+    document.addEventListener("click", clickButton);
 
     setInterval(game, 130);
     setInterval(pontuacao, 600)
@@ -133,6 +134,51 @@ window.onload = function() {
         default:
             break;
         }
+    }
+
+
+
+
+    function clickButton () {
+        let audio = document.getElementById("keyDown-sound");
+        audio.currentTime = 0.46;
+        function clickLeft (){
+            vx = -vel;
+            vy = 0;
+
+            audio.play();
+        }
+        let left = document.getElementById("left");
+        left.addEventListener("click", clickLeft);
+
+        function clickUp () {
+            vx = 0;
+            vy = -vel;
+ 
+            audio.play()
+        }
+        let up = document.getElementById("up");
+        up.addEventListener("click", clickUp);
+
+        function clickHeight () {
+            vx = vel;
+            vy = 0;
+
+            audio.play();
+        }
+        let height = document.getElementById("height");
+        height.addEventListener("click", clickHeight);
+
+        function clickDown () {
+            vx = 0;
+            vy = vel;
+
+            audio.play();
+        }
+        let down = document.getElementById("down");
+        down.addEventListener("click", clickDown);
+
+    
     }
 
     function pontuacao(score) {

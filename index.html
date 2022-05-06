@@ -9,7 +9,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&
+    display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+        
+
+    
 
     <title>Snake_Game</title>
 </head>
@@ -18,14 +26,31 @@
 
     <h1 id="h1">SNAKE-GAME</h1>
     <div class="div-canvas">
-        
         <div class="pontos"><p>PONTUAÇÃO<pre id="outPontuacao"></pre></p></div>
         <div class="dificuldade"><p>NÍVEL<pre id="setLevel"></pre></p></div>
 
         <canvas id="stage" width="260px" height="260px"></canvas>
     </div>
 
-    <audio class="theme" src="./audio/themeMusic.mp4"  autoplay controls volume="1" loop >Click</audio>
+
+
+
+    <div class="controls" style="background-color: blu">
+        <div class="div-uppDown">
+            <button class="buttonUpp" id="up"><div class="fa fa-arrow-circle-up"></div></button>
+
+            <button class="buttonDown" id="down"><div class="fa fa-arrow-circle-down"></div></button>
+            
+        </div>
+        <div class="div-rightLeft">
+            <button class="buttonLeft" id="left"><div class="fa fa-arrow-circle-left"></button>
+
+            <button class="buttonRight" id="height"><div class="fa fa-arrow-circle-right"></div></div></button>
+            
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br>
+    <audio class="theme" src="./audio/themeMusic.mp4"  autoplay controls  loop display="none"></audio>
     <audio src="./audio/ad-audio.mp4" id="add-audio"></audio>
     <audio src="./audio/keyDown-sound.mp4" id="keyDown-sound"></audio>
     <audio src="./audio/gameOver-sound.mp4" id="gameOver-sound.mp4"></audio>

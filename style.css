@@ -5,9 +5,14 @@
 
 :root {
     --cor1: rgb(207, 15, 0);
+    --corPre: rgb(255, 10, 10);
+
     --cor2: rgb(24, 151, 33);
 
     --cor3: rgba(207, 159, 0, 0.618);
+    --cor4: rgb(207, 158, 0);
+
+    
 }
 p {
     color: rgb(52, 46, 37);
@@ -89,7 +94,7 @@ p {
 
     /* color: rgb(163, 196, 102); */
 
-    color: rgb(207, 158, 0);
+    color: var(--cor4);
 
    
 }
@@ -99,7 +104,7 @@ pre {
     margin: 20px 20px;
     font-size: 1.2em;
     /* color: rgb(207, 31, 31); */
-    color: rgb(255, 10, 10);
+    color: var(--corPre);
 
     /* text-shadow: 1px 1px 1px rgb(197, 206, 197); */
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -109,5 +114,117 @@ pre {
 
 canvas {
     border: 3px var(--cor2) solid;
-    box-shadow: 0px 0px 2px 2px rgb(7, 107, 3);;
+    box-shadow: 0px 0px 2px 2px rgb(7, 107, 3);
+    border-radius: 0px;
+}
+
+
+
+
+
+.controls {
+    /* background-color: rgb(3, 54, 24); */
+    /* background-color: rgba(18, 17, 17); */
+    background-color: #26371581;
+    border: 3px var(--cor2) solid;
+    box-shadow: 0px 0px 2px 2px rgb(7, 107, 3);
+    border-radius: 0 0 0px 0px;
+
+    margin: -6px auto 0 auto;
+    display: grid;
+    width:260px;
+    height: auto;
+
+    grid-template-columns: auto auto; /*
+    grid-template-areas:  
+    ". upp upp ."
+    ". left right ."
+    ". down down ."
+    ;
+     */
+}
+
+.div-uppDown {
+    display: grid;
+    grid-gap: 2px;
+    margin: 5px;
+
+}
+
+.div-rightLeft {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2px;
+    margin-left: 80px;
+    align-content: space-around;
+
+}
+
+button {
+    background-color: var(--cor2);
+    border-color: var(--cor2);
+}
+
+.buttonUpp {
+    border-radius: 15px;
+    font-size: 2em;
+    width: 55px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+
+
+.buttonDown {
+    border-radius: 15px;
+    font-size: 2em;
+    width: 55px;
+    height: 40px;
+}
+
+
+.buttonRight {
+    border-radius: 20px;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+}
+
+
+.buttonLeft {
+    border-radius: 20px;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+
+
+}
+
+
+@Media (max-width: 800px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .div-canvas {
+        margin-top: 80px;
+    }
+
+    .dificuldade {
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+        top: -40px;
+        left: 0;
+    }
+
+    .pontos {
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+        top: -75px; 
+        left: 0;
+    
+    }
 }
