@@ -132,7 +132,7 @@ canvas {
 
     margin: -6px auto 0 auto;
     display: grid;
-    width:260px;
+    width:auto;
     height: auto;
 
     grid-template-columns: auto auto; /*
@@ -202,9 +202,9 @@ button {
 }
 
 
-@Media (max-width: 800px) {
+@Media (max-width: 450px) {
     h1 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     .div-canvas {
