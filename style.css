@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: rgb(207, 15, 0);
+    --cor2: rgb(24, 151, 33);
+
+    --cor3: rgba(207, 159, 0, 0.618);
+}
+p {
+    color: rgb(52, 46, 37);
+}
+.theme {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 30px auto 0 auto;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+body {
+    background-color: rgba(18, 17, 17, 0.933);
+}
+
+h1 {
+    color: var(--cor1);
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 2px 2px 1px var(--cor2);
+}
+
+
+.div-canvas {   
+    text-align: center; 
+    margin-top: 10px;
+    position: relative;
+   
+}
+
+/* .record {
+    width: 199px;
+    margin: auto;
+    margin-right: 15px;
+    border: 2px rgb(0, 0, 0) solid;
+    text-shadow: 1px 1px 1px rgb(24 151 33);
+    box-shadow: 1px 1px 1px var(--cor2);
+    background-color: ;
+    position: absolute;
+    right: 0;
+    top: 32%;
+} */
+
+.pontos {
+    width: 200px;
+    margin: auto;
+    margin-right: 15px;
+    border: 2px rgb(207, 158, 0) solid;
+    box-shadow: 1px 1px 2px black;
+    background-color: ;
+    position: absolute;
+    right: 0;
+
+}
+
+
+
+.dificuldade {
+    width: 199px;
+    margin: auto;
+    margin-right: 15px;
+    border: 2px rgb(207, 158, 0) solid;
+    box-shadow: 1px 1px 2px black;
+    background-color: ;
+    position: absolute;
+    right: 0;
+    top: 16%;
+}
+
+p {
+    display: inline;
+    text-align: end;
+    right: 0;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 1px 1px 1px rgb(79, 0, 0);
+
+    /* color: rgb(163, 196, 102); */
+
+    color: rgb(207, 158, 0);
+
+   
+}
+pre {
+    display: inline;
+    width: auto;
+    margin: 20px 20px;
+    font-size: 1.2em;
+    /* color: rgb(207, 31, 31); */
+    color: rgb(255, 10, 10);
+
+    /* text-shadow: 1px 1px 1px rgb(197, 206, 197); */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: 'New Rocker', cursive;
+     
+}
+
+canvas {
+    border: 3px var(--cor2) solid;
+    box-shadow: 0px 0px 2px 2px rgb(7, 107, 3);;
+}
