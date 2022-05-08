@@ -126,13 +126,92 @@ canvas {
 
 
 .controls {
+<<<<<<< HEAD
     display: none;
+=======
+    /* background-color: rgb(3, 54, 24); */
+    /* background-color: rgba(18, 17, 17); */
+    background-color: #26371581;
+    border: 3px var(--cor2) solid;
+    box-shadow: 0px 0px 2px 2px rgb(7, 107, 3);
+    border-radius: 0 0 0px 0px;
+
+    margin: -6px auto 0 auto;
+    display: grid;
+    width:auto;
+    height: auto;
+
+    grid-template-columns: auto auto; /*
+    grid-template-areas:  
+    ". upp upp ."
+    ". left right ."
+    ". down down ."
+    ;
+     */
+}
+
+.div-uppDown {
+    display: grid;
+    grid-gap: 2px;
+    margin: 5px;
+
+}
+
+.div-rightLeft {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2px;
+    margin-left: 80px;
+    align-content: space-around;
+
+}
+
+button {
+    background-color: var(--cor2);
+    border-color: var(--cor2);
+}
+
+.buttonUpp {
+    border-radius: 15px;
+    font-size: 2em;
+    width: 55px;
+    height: 40px;
+    margin-bottom: 12px;
 }
 
 
-@Media (max-width: 800px) {
+
+.buttonDown {
+    border-radius: 15px;
+    font-size: 2em;
+    width: 55px;
+    height: 40px;
+}
+
+
+.buttonRight {
+    border-radius: 20px;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+}
+
+
+.buttonLeft {
+    border-radius: 20px;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+
+
+>>>>>>> 9f54c90960a5c7ca17380e6b77af1d6a74b11142
+}
+
+
+@Media (max-width: 450px) {
     h1 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     .div-canvas {
