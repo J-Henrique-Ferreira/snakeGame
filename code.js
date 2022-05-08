@@ -5,7 +5,6 @@ window.onload = function() {
     document.addEventListener("click", clickButton);
 
     setInterval(game, 180);
-    setInterval(game, 160);
     setInterval(pontuacao, 600)
     level();
 
