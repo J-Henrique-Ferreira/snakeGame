@@ -88,7 +88,7 @@ window.onload = function() {
             let audio = document.getElementById("add-audio");
             audio.currentTime = 0.15;
             audio.play();
-            cauda += 2;
+            cauda += 1;
             pontos += 13;
             appleX = Math.floor(Math.random() * quaP);
             appleY = Math.floor(Math.random() * quaP);
